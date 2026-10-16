@@ -1,0 +1,33 @@
+{
+  "name": "@sala/mcp",
+  "version": "1.0.0",
+  "description": "MCP server sala-boost — info/schema/query/logs para salaab/framework",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "sala-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
