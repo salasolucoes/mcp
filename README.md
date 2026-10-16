@@ -1,4 +1,4 @@
-# @sala/mcp
+# @salasolucoes/mcp
 
 MCP server **sala-boost** — `sala_info`, `sala_schema`, `sala_query`, `sala_logs` para `salaab/framework` (e derivados sem Laravel puro).
 
@@ -7,9 +7,9 @@ Extraído de `mcp/sala` do framework — mesmo fluxo do `sala/console`.
 ## Instalação
 
 ```bash
-npm install -D @sala/mcp
+npm install -D @salasolucoes/mcp
 # ou
-npm install -g @sala/mcp
+npm install -g @salasolucoes/mcp
 ```
 
 Build (gera `dist/`):
@@ -29,7 +29,7 @@ npm run build
   "mcp": {
     "sala-boost": {
       "type": "local",
-      "command": ["node", "node_modules/@sala/mcp/dist/index.js"],
+      "command": ["node", "node_modules/@salasolucoes/mcp/dist/index.js"],
       "enabled": true
     }
   }
@@ -43,7 +43,7 @@ npm run build
   "mcpServers": {
     "sala-boost": {
       "command": "node",
-      "args": ["node_modules/@sala/mcp/dist/index.js"]
+      "args": ["node_modules/@salasolucoes/mcp/dist/index.js"]
     }
   }
 }
@@ -63,7 +63,7 @@ Ou via binário publicado (após `npm install`):
 
 ### Variável opcional
 
-- `SALA_PROJECT_ROOT` — força a raiz do projeto (caso o auto-detecção por `composer.json`/`phinx.php`/`config/database.php` não alcance). Ex: `SALA_PROJECT_ROOT=/caminho/do/projeto node node_modules/@sala/mcp/dist/index.js`
+- `SALA_PROJECT_ROOT` — força a raiz do projeto (caso o auto-detecção por `composer.json`/`phinx.php`/`config/database.php` não alcance). Ex: `SALA_PROJECT_ROOT=/caminho/do/projeto node node_modules/@salasolucoes/mcp/dist/index.js`
 
 ## Tools
 

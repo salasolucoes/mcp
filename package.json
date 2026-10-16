@@ -1,5 +1,5 @@
 {
-  "name": "@sala/mcp",
+  "name": "@salasolucoes/mcp",
   "version": "1.0.0",
   "description": "MCP server sala-boost — info/schema/query/logs para salaab/framework",
   "type": "module",
